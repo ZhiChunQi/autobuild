@@ -13,6 +13,7 @@ jobs:
     - name: Build the Docker image
       run: |
         ls
+        pwd
         docker images
         docker build . --file Dockerfile --tag xiaozhiautobuild:$(date +%s)
         docker images
