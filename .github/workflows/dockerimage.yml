@@ -12,6 +12,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build the Docker image
       run: |
+        ls
         docker images
         docker build . --file Dockerfile --tag xiaozhiautobuild:$(date +%s)
         docker images
